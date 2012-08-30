@@ -1,0 +1,37 @@
+header{
+  .navbar{
+  margin-bottom:0;
+  }
+}
+.ui-layout-resizer-north{
+display:none;
+}
+.tab-actions{
+display: block;
+position: absolute;
+right: 0;
+top: 8px;
+}
+.tree{
+  .has-subitems:before{
+  display: inline-block;
+  content: "-\00a0";
+  }
+  .has-subitems.collapsed:before{
+  display: inline-block;
+  content: "+\00a0";
+  }
+  .has-not-subitems:before{
+  display: inline-block;
+  content: "\00a0 \00a0 \00a0";
+  }
+}
+#internal-users_filter{
+display:none;
+}
+.dataTables_wrapper{
+  .row{
+  width:100%;
+  margin:0;
+  }
+}
