@@ -22,6 +22,26 @@ header{
   .navbar{
   margin-bottom:0;
   }
+  .brand{
+    margin-top:15px;
+  }
+  .user-nav{
+    margin-top: 30px;
+    .currency{
+      .nav-item{
+        padding: 0 10px;
+        background: transparent url("@{url-img}footer-li.png") right center no-repeat;
+        color: @white;
+        text-shadow: 1px 1px 0px rgba(0,0,0,0.8), -1px -1px 0px rgba(0,0,0,0.8);
+        &:last-child{
+          background: transparent none;
+        }
+      }
+      .active{
+        color: #DF4800;
+      }
+    }
+  }
 }
 //-------
 .ui-layout-resizer-north{
@@ -119,6 +139,10 @@ display:none;
 .main-nav{
   height:90px;
   padding-top:1px;
+  .disabled{
+    cursor:default;
+    opacity: 0.3;
+  }
 }
 .nav-pills > li > a.nav-item{
   width:75px;
@@ -154,6 +178,9 @@ display:none;
   border-top: 1px solid #bababa;
   padding: 25px 0;
   margin-top:25px;
+  img{
+    border: 1px solid @grayLight;
+  }
 }
 //testimonials
 #testimonials{
@@ -233,6 +260,29 @@ footer{
     background-image: url("@{url-img}bg-shadow-footer.png");
     background-position: center top;
     background-repeat: no-repeat;
+  }
+  nav{
+    a, p{
+    color: #999999;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.8);
+    }
+    p{
+      text-align:center;
+    }
+    .nav{
+      margin: 25px 0 40px 0;
+      li{
+        background: transparent url("@{url-img}footer-li.png") right center no-repeat;
+        &:last-child{
+          background: transparent none;
+        }
+      }
+    }
+    .nav > li > a:hover {
+      background-color: transparent;
+      color:#BABABA;
+    }
   }
 }
 footer:before{
