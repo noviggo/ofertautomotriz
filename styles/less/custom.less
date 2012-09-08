@@ -85,6 +85,23 @@ display:none;
   -moz-box-shadow: 0 8px 17px -7px black;
   box-shadow: 0 8px 17px -7px black;
   margin-top:22px;
+  position:relative;
+}
+.carousel-paginator{
+  display:block;
+  position:absolute;
+  bottom: 25px;
+  left: 52px;
+  a{
+    display: inline-block;
+    width: 12px;
+    height:12px;
+    background: transparent url("@{url-img}slider-pg.png") right top no-repeat;
+    &.active{
+      background-position: left top;
+      display:inline-block;
+    }
+  }
 }
 #carousel-about{
   height:126px;
