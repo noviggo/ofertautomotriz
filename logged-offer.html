@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Ofertautomotriz.com</title>
+    <link rel="stylesheet/less" href="styles/less/bootstrap.less" type="text/css">
+    <script src="scripts/jquery.js" type="text/javascript"></script>
+    <script src="scripts/less-1.3.0.min.js" type="text/javascript"></script>
+    <script src="scripts/bootstrap.js" type="text/javascript"></script>
+    <script src='scripts/onload.js' type='text/javascript'></script>
+  </head>
+</html>
+<body class="">
+  <header class="container">
+    <h1  class="pull-left brand"><a href="index.html"><img src="styles/img/logo-ofertautomotriz.png" alt="ofertautomotriz.com"></a></h1>
+    <nav class="pull-right user-nav span3">
+      <span class="currency nav"><a href="#" class="nav-item active">UF</a><a href="#" class="nav-item">USD</a></span>
+      <div class="dropdown pull-right">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user"></i> Matías Benegas</a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+          <li><a href="my-account.html"><!-- <i class="icon-user"></i>  -->Mi cuenta</a></li>
+          <li><a href="mis-cotiz.html"><!-- <i class="icon-orders"></i>  -->Mis órdenes</a></li>
+          <li><a href="mis-fav.html"><!-- <i class="icon-favs"></i>  -->Favoritos</a></li>
+          <li class="divider"></li>
+          <li><a href="index.html"><!-- <i class="icon-logout"></i>  -->Salir</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="container main-content">
+    <section class="row">
+      <nav class="span12 main-nav">
+        <ul class="span7 nav nav-pills">
+          <li><a href="#" onclick="$('#search-form').slideToggle('fast');" class="nav-item car">autos</a></li>
+          <li><a href="#" class="nav-item suv">suv</a></li>
+          <li><a href="#" class="nav-item c4x4">4x4</a></li>
+          <li><a href="#" class="nav-item pickup">pickups</a></li>
+          <li><a href="#" class="nav-item utility">utilitarios</a></li>
+        </ul>
+        <ul class="pull-right nav nav-pills">
+          <li><a href="#" class="nav-item trunk disabled">camiones</a></li>
+          <li><a href="#" class="nav-item machine disabled">maquinarias</a></li>
+          <li><a href="#" class="nav-item motob disabled">motos</a></li>
+        </ul>
+      </nav>
+      <div id="search-form"  class="span12 row search-box hide">
+        <a href="#" class="close pull-right" onclick="$('#search-form').slideToggle('fast');">x</a>
+        <form>
+          <div class="span6 range">
+            <h4>Seleccionar rango de precios:</h4>
+            <p class="pull-left"><label for="from_value">Desde:</label><input type="number" name="from_value" value="" id="from_value" class="input-small"></p>
+            <p class="pull-left"><label for="to_value">Hasta:</label><input type="number" name="to_value" value="" id="to_value" class="input-small"></p>
+          </div>
+          <div class="span5">
+            <h4>Buscar modelo</h4>
+            <p><input type="text" name="model" value="" id="model"></p></p>
+          </div>
+          <a href="search-res1.html" class="btn search">Buscar</a>
+        </form>
+      </div>
+    </section>
+    
+    <!-- main content-->
+    <section id="compare" class="row span12 content">
+      <div class="title-box clearfix">
+        <h3 class="span8">Cotizar mi selección</h3>
+      </div>
+      <div id="offer-form" class="form-view row-fluid">
+        <section class="product span12">
+          <img src="images/truck-compare.png" alt="">
+          <div class="product-desc">
+            <h4 class="heading">2012 Ford - E Series Cabina regular 4x2 137'WB XL</h4>
+            <p>Eum iriure dolor in hendrerit in vulputate velit esse molestie consequat vel illum. Et accumsan et iusto odio dignissim qui blandit praesent. Qui sequitur mutationem consuetudium lectorum mirum est, notare quam littera gothica quam nunc.</p>
+            <p class="price">$24.345</p>
+          </div>
+        </section>
+        <section class="span12">
+          <div class="span3">
+            <legend>Desea financiar su vehiculo?</legend>
+            <span class="help-block">Complete solamente si desea financiamiento</span>
+          </div>
+          <div class="span9">
+            <p>
+              <label class="required">Monto del pie</label>
+              <input type="text" class="input-xxlarge" placeholder="">
+            </p>
+            <p>
+              <label class="required">Plazo del crédito</label>
+              <input type="text" class="input-xxlarge" placeholder="">
+            </p>
+            <p>
+              <label class="required">Renta líquida</label>
+              <input type="text" class="input-xxlarge" placeholder="">
+            </p>
+          </div>
+        </section>
+        <section class="span12">
+          <div class="span3">
+            <legend>Datos Seguro</legend>
+          </div>
+          <div class="span9">
+            <p>
+              <label class="required">Deducible</label>
+              <input type="text" class="input-xxlarge" placeholder="">
+            </p>
+            <p>
+              <label class="required">Cobertura</label>
+              <input type="text" class="input-xxlarge" placeholder="">
+            </p>
+          </div>
+        </section>
+        <section class="form-actions span12 clearfix">
+          <p><a href="mis-cotiz.html" class="btn btn-primary pull-right">Confirmar Solicitud</a></p>
+        </section>
+      </div>
+    </section>
+    <!-- end main content-->
+  </div>
+  <footer>
+    <div class="container">
+      <nav>
+        <ul class="nav nav-pills">
+          <li><a href="#">Nuestra Empresa</a></li>
+          <li><a href="#">Guía para comprar</a></li>
+          <li><a href="#">Términos de uso</a></li>
+          <li><a href="#">Políticas de privacidad</a></li>
+        </ul>
+        <p class="copyright">COPYRIGHT 2012 OFERTAUTOMOTRIZ.COM</p>
+      </nav>
+      
+     
+    </div>
+
+  </footer>
+  <!-- modal -->
+</body>
+</html>
