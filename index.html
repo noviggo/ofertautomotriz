@@ -52,7 +52,7 @@
         </form>
       </div>
     </section>
-    
+
     <!-- main content-->
     <section id="featured" class="featured">
       <div id="myCarousel" class="carousel slide">
@@ -63,9 +63,9 @@
           <div rel=2 class="item"><img src="styles/img/slide.jpg" alt=""></div>
         </div>
         <div class="carousel-paginator">
-          <span onclick="set_active_item(this);" rel=0 class="active pag-item"></span>
-          <span onclick="set_active_item(this);" rel=1 class="pag-item"></span>
-          <span onclick="set_active_item(this);" rel=2 class="pag-item"></span>
+          <span onclick="set_active_item(this,$('#myCarousel')[0]);" rel=0 class="active pag-item"></span>
+          <span onclick="set_active_item(this,$('#myCarousel')[0]);" rel=1 class="pag-item"></span>
+          <span onclick="set_active_item(this,$('#myCarousel')[0]);" rel=2 class="pag-item"></span>
         </div>
       </div>
     </section>
@@ -126,8 +126,8 @@
         </ul>
         <p class="copyright">COPYRIGHT 2012 OFERTAUTOMOTRIZ.COM</p>
       </nav>
-      
-     
+
+
     </div>
 
   </footer>
