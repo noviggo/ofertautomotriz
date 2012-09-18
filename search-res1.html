@@ -56,7 +56,7 @@
     </section>
     
     <!-- main content-->
-    <section id="search-resoults1" class="row span12 search-resoults1">
+    <section id="search-resoults1" class="row span12 search-resoults1 content">
       <div class="filter-box clearfix">
         <div class="filters span8">
           <span>Resultados:</span>
@@ -235,8 +235,8 @@
           <span onclick="set_active_item(this);" rel=2 class="pag-item"><img src="images/modal-thumb.jpg" alt=""></span>
         </div>
       </div>
-      <div id="slide-btn" class="slide-btn"></div>
-      <div class="vehicle-details">
+      <!-- <div id="slide-btn" class="slide-btn"></div> -->
+      <div class="vehicle-details" id="vehicle-details">
         <div class="details-modal">
           <h6>ESPECIFICACIONES TECNICAS</h6>
           <ul>
@@ -259,15 +259,29 @@
         </div>
         <div class="slide-btn"></div>
       </div>
+      <div class="misc clearfix">
+        <div class="offers pull-left span4">
+          <div class="checkbox"><input type="checkbox" name="" value="" id=""><label for=""><a href="#">Quiero la versión FULL por 
+          solo: $ 57.090</a></label></div>
+        </div>
+        <div class="pull-right span3">
+          <ul class="nav nav-pills">
+            <li class="nav-item dropdown dropup">
+              <a class="dropdown-toggle" id="versions" role="button" data-toggle="dropdown" href="#">Ver otras versiones <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="versions">
+                <li><a href="#">GLX</a></li>
+                <li><a href="#">GLX 4ptas</a></li>
+                <li><a href="#">GL</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
     </div>
     <div class="modal-footer">
       <div class="related pull-left">
-        <p>Otras versiones</p>
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#">VLX</a></li>
-          <li class="nav-item"><a href="#">XX</a></li>
-          <li class="nav-item"><a href="#">GL</a></li>
-        </ul>
+        <a href="#" class="btn">Entérate qué opinan los expertos</a>
       </div>
       <a href="#" class="btn" data-dismiss="modal">Close</a>
       <a href="#" class="btn btn-danger w-arrow">COTIZAR <i class="icon-play"></i></a>

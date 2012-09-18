@@ -20,13 +20,22 @@ var set_active_item_when_slide= function(){
   el = $('.pag-item[rel='+ number +']')[0]
   set_active_item(el);
 }
+var menu_follow = {
+ el: $('#vehicle-details'),
+ animate: function(){
+   console.log(this.el);
+   if(this.el.css('left') == 'auto'){this.el.css('left',0)}
+   this.el.animate({left: parseInt(this.el.css('left')) === 0 ? - this.el.outerWidth() :0});
+ }
+ }
 $(function(){
-  
+
   $('#myCarousel').on('slid', function(){set_active_item_when_slide();})
   $('#myCarousel').carousel();
   $('#modalCarousel').carousel();
   $('#car-modal').modal('hide');
   $('.slide-btn').click(function() {
-      $('.vehicle-details').animate({width: 'toggle'});
+      menu_follow.animate();
   });
+  $('.dropdown-toggle').dropdown()
 })
