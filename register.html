@@ -13,18 +13,10 @@
 <body class="">
   <header class="container">
     <h1  class="pull-left brand"><a href="#"><img src="styles/img/logo-ofertautomotriz.png" alt="ofertautomotriz.com"></a></h1>
-    <nav class="pull-right user-nav span3">
+    <nav class="pull-right user-nav">
       <span class="currency nav"><a href="#" class="nav-item active">UF</a><a href="#" class="nav-item">USD</a></span>
-      <div class="dropdown pull-right">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user"></i> Matías Benegas</a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-          <li><a href="my-account.html"><!-- <i class="icon-user"></i>  -->Mi cuenta</a></li>
-          <li><a href="mis-cotiz.html"><!-- <i class="icon-orders"></i>  -->Mis órdenes</a></li>
-          <li><a href="mis-fav.html"><!-- <i class="icon-favs"></i>  -->Favoritos</a></li>
-          <li class="divider"></li>
-          <li><a href="index.html"><!-- <i class="icon-logout"></i>  -->Salir</a></li>
-        </ul>
-      </div>
+      <a href="#" class="btn">INGRESAR</a>
+      <a href="#" class="btn btn-danger w-arrow">REGISTRARSE <i class="icon-play"></i></a>
     </nav>
   </header>
   <div class="container main-content">
@@ -63,10 +55,71 @@
     <!-- main content-->
     <section id="compare" class="row span12 content">
       <div class="title-box clearfix">
-        <h3 class="span8">Mis cuenta</h3>
+        <h3 class="span8">Registrame</h3>
       </div>
       <div id="offer-form" class="form-view row-fluid">
-      Mis cuenta
+        <section class="span12">
+          <div class="span3">
+            <legend>Datos Personales</legend>
+          </div>
+          <div class="span9">
+            <p>
+              <label class="required">Nombre <span>*</span></label>
+              <input type="text" class="input-xxlarge" placeholder="">
+            </p>
+            <p>
+              <label class="required">RUT <span>*</span></label>
+              <input type="text" class="input-xxlarge" placeholder="">
+            </p>
+            <p>
+              <label class="required">Email <span>*</span></label>
+              <input type="text" class="input-xxlarge" placeholder="">
+            </p>
+            <p>
+              <label class="required">Teléfono de contacto <span>*</span></label>
+              <input type="text" class="input-xxlarge" placeholder="">
+            </p>
+            <p class="input-prepend">
+              <label>Fecha de Nacimiento</label>
+              <span class="add-on"><i class="icon-calendar"></i></span><input class="span3" id="prependedInput" size="16" type="text" placeholder="dd/mm/aa">
+            </p>
+            <p>
+              <label class="required">Sexo <span>*</span></label>
+              <span class="checkbox">
+                <label class="checkbox"><input type="checkbox"> Masculino</label>
+                <label class="checkbox"><input type="checkbox"> Femenino</label>
+              </span>
+            </p>
+          </div>
+        </section>
+        <section class="span12">
+          <div class="span3">
+            <legend>Configuración de cuenta</legend>
+            
+          </div>
+          <div class="span9">
+            <p>
+              <label class="required">Nombre de usuario <span>*</span></label>
+              <input type="text" class="input-xxlarge" placeholder="">
+            </p>
+            <p>
+              <label class="required">Contraseña<span>*</span></label>
+              <input type="text" class="input-xxlarge" placeholder="">
+            </p>
+            <p>
+              <label class="required">Verificación de contraseña <span>*</span></label>
+              <input type="text" class="input-xxlarge" placeholder="">
+            </p>
+            <p>
+              <span class="checkbox">
+                <label class="checkbox"><input type="checkbox"> Acepto haber leído y aprobado los <a href="#">Términos y condiciones</a></label>
+              </span>
+            </p>
+          </div>
+        </section>
+        <section class="form-actions span12 clearfix">
+          <p><a href="reg-conf.html" class="btn btn-primary pull-right">Registrarme</a></p>
+        </section>
       </div>
     </section>
     <!-- end main content-->

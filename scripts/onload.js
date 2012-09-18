@@ -22,7 +22,7 @@ $(function(){
   $('#myCarousel, #carousel-about').carousel();
   $('#myCarousel').on('slid', function(){set_active_item_when_slide(this);})
   $('#modalCarousel').carousel();
-  $('#car-modal').modal('hide');
+  $('#car-modal, #login-modal).modal('hide');
   $('.slide-btn').click(function() {
       menu_follow(this);
   });

@@ -19,6 +19,15 @@ body{
 a{
   color: @oaLinks;
 }
+.form-view .span12 [class*="span"]:first-child{
+  margin-left:0px;
+}
+.icon-user{
+  background-image: url("@{url-img}icon-user.png");
+  background-position: -6px -4px;
+  height: 16px;
+  width: 16px;
+}
 header:before{
   display:block;
   position:absolute;
@@ -488,7 +497,7 @@ display:none;
     left:-292px;
     top:0;
     height:360px;
-    width: 320px;
+    width: 312px;
     margin-right:-20px;
     .details-modal{
       display:block;
@@ -508,7 +517,6 @@ display:none;
     .slide-btn{
       display:block;
       position: relative;
-      background-position: left center;
     }
   }
   .slide-btn{
@@ -522,6 +530,12 @@ display:none;
     cursor: pointer;
     background: @grayLightOA url(../img/modal-arrows.png) right center no-repeat;
     border-left:1px solid @white;
+    &.arrow-left{
+      background-position: right center;
+    }
+    &.arrow-rigth{
+      background-position: left center;
+    }
   }  
   .misc{
     background-color: @grayLightOA;
@@ -592,6 +606,55 @@ div.compare-table{
     }
   }
   padding: 0 20px;
+}
+//offer
+.product{
+  margin-left:20px;
+  img{
+    float: left;
+    border: 1px solid @horizLine;
+    margin: 14px 0;
+  }
+  .heading{
+    color: @oaLinks;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .desc{
+    color: @gray;
+  }
+  .price{
+    color: #484848;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .product-desc{
+    padding-left: 180px;
+    border-top: 1px solid @horizLine;
+  }
+}
+.form-view{
+  margin: 0 auto;
+  width: 910px;
+  .span12{
+    margin-left:0px;
+  }
+  section{
+    border-bottom: 1px solid @horizLine;
+    padding: 30px 0;
+  }
+  label{
+    font-weight: bold;
+  }
+  .required span{
+    color: @oaLinks;
+  }
+  legend{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    border-bottom: 0px none;
+  }
 }
 //footer
 
