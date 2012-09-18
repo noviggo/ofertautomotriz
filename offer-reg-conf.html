@@ -12,11 +12,11 @@
 </html>
 <body class="">
   <header class="container">
-    <h1  class="pull-left brand"><a href="#"><img src="styles/img/logo-ofertautomotriz.png" alt="ofertautomotriz.com"></a></h1>
+    <h1  class="pull-left brand"><a href="index.html"><img src="styles/img/logo-ofertautomotriz.png" alt="ofertautomotriz.com"></a></h1>
     <nav class="pull-right user-nav">
       <span class="currency nav"><a href="#" class="nav-item active">UF</a><a href="#" class="nav-item">USD</a></span>
-      <a href="#" class="btn">INGRESAR</a>
-      <a href="#" class="btn btn-danger w-arrow">REGISTRARSE <i class="icon-play"></i></a>
+      <a href="#login-modal" data-toggle="modal" class="btn">INGRESAR</a>
+      <a href="register.html" class="btn btn-danger w-arrow">REGISTRARSE <i class="icon-play"></i></a>
     </nav>
   </header>
   <div class="container main-content">
@@ -92,5 +92,41 @@
 
   </footer>
   <!-- modal -->
+  <!-- modal -->
+  
+  <div class="modal hide fade vehicle" id="login-modal">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3>Ingresar a ofertautomotriz.com</h3>
+    </div>
+    <div class="modal-body">
+      <p></p>
+        <form class="form-horizontal">
+          <div class="control-group">
+            <label class="control-label" for="inputEmail">Email</label>
+            <div class="controls">
+              <input type="text" id="inputEmail" placeholder="Email">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="inputPassword">Password</label>
+            <div class="controls">
+              <input type="password" id="inputPassword" placeholder="Password">
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <label class="checkbox">
+                <input type="checkbox"> Remember me
+              </label>
+             
+            </div>
+          </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+       <a href="#" class="btn btn-primary">Sign in</a>
+    </div>
+  </div>
 </body>
 </html>
