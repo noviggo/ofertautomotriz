@@ -1,0 +1,29 @@
+.inbox-view .collapse .offer{
+  display: block;
+  height: 221px;
+  background: transparent url("../../images/temporal/cotized-offer.png") right top no-repeat;
+  &:hover{
+    background-image: url("../../images/temporal/cotized-offer-over.png");
+    background-color: rgba(0,0,0,0.06);
+  }
+  &.oc-generated, &.oc-generated:hover{
+    background-image: url("../../images/temporal/cotized-offer-oc.png");
+  }
+  &.odd{
+    background-color: rgba(0,0,0,0.03);
+    &:hover{
+      background-color: rgba(0,0,0,0.06);
+    }
+  }
+}
+.item-row{
+  cursor: pointer;
+  &:hover{
+    background-color: rgba(0,0,0,0.05);
+  }
+}
+.inbox-view{
+  .collapse{
+    background: transparent url("../../images/temporal/bottom-divider.png") 15px bottom no-repeat;
+  }
+}

@@ -40,9 +40,15 @@
         <a href="#" class="close pull-right" onclick="$('#search-form').slideToggle('fast');">x</a>
         <form>
           <div class="span6 range">
-            <h4>Seleccionar rango de precios:</h4>
-            <p class="pull-left"><label for="from_value">Desde:</label><input type="number" name="from_value" value="" id="from_value" class="input-small"></p>
-            <p class="pull-left"><label for="to_value">Hasta:</label><input type="number" name="to_value" value="" id="to_value" class="input-small"></p>
+             <h4>Seleccionar rango de precios:<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Los precios son de referencia">*</a></sup></h4>
+            <p class="pull-left">
+              <label for="from_value">Desde:</label>
+              <span class="input-prepend"><span class="add-on">$</span><input type="number" name="from_value" value="" id="from_value" class="input-small"></span>
+            </p>
+            <p class="pull-left">
+              <label for="to_value">Hasta:</label>
+              <span class="input-prepend"><span class="add-on">$</span><input type="number" name="to_value" value="" id="to_value" class="input-small"></span>
+            </p>
           </div>
           <div class="span5">
             <h4>Buscar modelo</h4>
@@ -58,14 +64,16 @@
       <div id="myCarousel" class="carousel slide">
         <!-- Carousel items -->
         <div class="carousel-inner">
-          <div rel=0 class="item active"><img src="styles/img/slide.jpg" alt=""></div>
-          <div rel=1 class="item"><img src="styles/img/slide.jpg" alt=""></div>
-          <div rel=2 class="item"><img src="styles/img/slide.jpg" alt=""></div>
+          <div rel=0 class="item active"><img src="images/slider/slide.jpg" alt=""></div>
+          <div rel=1 class="item"><img src="images/slider/oferta_automotriz_banner_2.jpg" alt=""></div>
+          <div rel=2 class="item"><img src="images/slider/oferta_automotriz_banner_3.jpg" alt=""></div>
+          <div rel=3 class="item"><img src="images/slider/oferta_automotriz_banner_4.jpg" alt=""></div>
         </div>
         <div class="carousel-paginator">
           <span onclick="set_active_item(this,$('#myCarousel')[0]);" rel=0 class="active pag-item"></span>
           <span onclick="set_active_item(this,$('#myCarousel')[0]);" rel=1 class="pag-item"></span>
           <span onclick="set_active_item(this,$('#myCarousel')[0]);" rel=2 class="pag-item"></span>
+          <span onclick="set_active_item(this,$('#myCarousel')[0]);" rel=3 class="pag-item"></span>
         </div>
       </div>
     </section>
@@ -104,13 +112,14 @@
       <div class="span6 testimonial">
         <img src="images/happy-customer.png" alt="" class="pull-left">
         <h3>Ellos ganaron comprando con Oferta Automotriz</h3>
-        <p class="customer">Carlos , Providencia</p>
+        <p class="customer">Carlos , Providencia<br>RUT: 22838895-5</p>
         <blockquote>
           Ahora no pierdo más tiempo recorriendo las concesionarias.
         </blockquote>
       </div>
-      <div class="span5 pull-right">
+      <div class="span5 pull-right partners">
         <h3>Nuestros Partners</h3>
+        <img src="images/partners.png">
       </div>
     </section>
       <!-- end main content-->
@@ -167,7 +176,7 @@
         </form>
     </div>
     <div class="modal-footer">
-       <a href="#" class="btn btn-primary">Sign in</a>
+       <a href="mis-cotiz.html" class="btn btn-primary">Sign in</a>
     </div>
   </div>
   <!-- modal -->
@@ -203,7 +212,7 @@
         </form>
     </div>
     <div class="modal-footer">
-       <a href="#" class="btn btn-primary">Sign in</a>
+       <a href="mis-cotiz.html" class="btn btn-primary">Sign in</a>
     </div>
   </div>
 </body>

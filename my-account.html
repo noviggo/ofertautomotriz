@@ -18,9 +18,8 @@
       <div class="dropdown pull-right">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user"></i> Matías Benegas</a>
         <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-          <li><a href="my-account.html"><!-- <i class="icon-user"></i>  -->Mi cuenta</a></li>
-          <li><a href="mis-cotiz.html"><!-- <i class="icon-orders"></i>  -->Mis órdenes</a></li>
-          <li><a href="mis-fav.html"><!-- <i class="icon-favs"></i>  -->Favoritos</a></li>
+          <li><a href="my-account.html"><!-- <i class="icon-user"></i>  -->Mi perfil</a></li>
+          <li><a href="mis-cotiz.html"><!-- <i class="icon-orders"></i>  -->Mis cotizaciones</a></li>
           <li class="divider"></li>
           <li><a href="index.html"><!-- <i class="icon-logout"></i>  -->Salir</a></li>
         </ul>
@@ -47,9 +46,15 @@
         <a href="#" class="close pull-right" onclick="$('#search-form').slideToggle('fast');">x</a>
         <form>
           <div class="span6 range">
-            <h4>Seleccionar rango de precios:</h4>
-            <p class="pull-left"><label for="from_value">Desde:</label><input type="number" name="from_value" value="" id="from_value" class="input-small"></p>
-            <p class="pull-left"><label for="to_value">Hasta:</label><input type="number" name="to_value" value="" id="to_value" class="input-small"></p>
+             <h4>Seleccionar rango de precios:<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Los precios son de referencia">*</a></sup></h4>
+            <p class="pull-left">
+              <label for="from_value">Desde:</label>
+              <span class="input-prepend"><span class="add-on">$</span><input type="number" name="from_value" value="" id="from_value" class="input-small"></span>
+            </p>
+            <p class="pull-left">
+              <label for="to_value">Hasta:</label>
+              <span class="input-prepend"><span class="add-on">$</span><input type="number" name="to_value" value="" id="to_value" class="input-small"></span>
+            </p>
           </div>
           <div class="span5">
             <h4>Buscar modelo</h4>
@@ -63,10 +68,10 @@
     <!-- main content-->
     <section id="compare" class="row span12 content">
       <div class="title-box clearfix">
-        <h3 class="span8">Mis cuenta</h3>
+        <h3 class="span8">Mi cuenta</h3>
       </div>
       <div id="offer-form" class="form-view row-fluid">
-      Mis cuenta
+        <p>vista de Perfil de usuario</p>
       </div>
     </section>
     <!-- end main content-->
