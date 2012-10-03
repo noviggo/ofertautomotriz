@@ -47,9 +47,15 @@
         <a href="#" class="close pull-right" onclick="$('#search-form').slideToggle('fast');">x</a>
         <form>
           <div class="span6 range">
-            <h4>Seleccionar rango de precios:</h4>
-            <p class="pull-left"><label for="from_value">Desde:</label><input type="number" name="from_value" value="" id="from_value" class="input-small"></p>
-            <p class="pull-left"><label for="to_value">Hasta:</label><input type="number" name="to_value" value="" id="to_value" class="input-small"></p>
+             <h4>Seleccionar rango de precios:<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Los precios son de referencia">*</a></sup></h4>
+            <p class="pull-left">
+              <label for="from_value">Desde:</label>
+              <span class="input-prepend"><span class="add-on">$</span><input type="number" name="from_value" value="" id="from_value" class="input-small"></span>
+            </p>
+            <p class="pull-left">
+              <label for="to_value">Hasta:</label>
+              <span class="input-prepend"><span class="add-on">$</span><input type="number" name="to_value" value="" id="to_value" class="input-small"></span>
+            </p>
           </div>
           <div class="span5">
             <h4>Buscar modelo</h4>

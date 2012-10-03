@@ -45,9 +45,15 @@
         <a href="#" class="close pull-right" onclick="$('#search-form').slideToggle('fast');">x</a>
         <form>
           <div class="span6 range">
-            <h4>Seleccionar rango de precios:</h4>
-            <p class="pull-left"><label for="from_value">Desde:</label><input type="number" name="from_value" value="" id="from_value" class="input-small"></p>
-            <p class="pull-left"><label for="to_value">Hasta:</label><input type="number" name="to_value" value="" id="to_value" class="input-small"></p>
+             <h4>Seleccionar rango de precios:<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Los precios son de referencia">*</a></sup></h4>
+            <p class="pull-left">
+              <label for="from_value">Desde:</label>
+              <span class="input-prepend"><span class="add-on">$</span><input type="number" name="from_value" value="" id="from_value" class="input-small"></span>
+            </p>
+            <p class="pull-left">
+              <label for="to_value">Hasta:</label>
+              <span class="input-prepend"><span class="add-on">$</span><input type="number" name="to_value" value="" id="to_value" class="input-small"></span>
+            </p>
           </div>
           <div class="span5">
             <h4>Buscar modelo</h4>
@@ -107,7 +113,7 @@
                 <a href="#" class="btn btn-small">Quitar</a>
                 <a href="goto-offer.html#" class="btn btn-danger btn-small w-arrow">COTIZAR <i class="icon-play"></i></a>
               </div>
-              <span>$ <b>USD 500.000</b></span>
+              <span>$ <b>500.000<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Precio de referencia">*</a></sup></b></span>
             </div>
           </div>
           <div class="span4">
@@ -121,7 +127,7 @@
                 <a href="#" class="btn btn-small">Quitar</a>
                 <a href="goto-offer.html#" class="btn btn-danger btn-small w-arrow">COTIZAR <i class="icon-play"></i></a>
               </div>
-              <span>$ <b>USD 500.000</b></span>
+              <span>$ <b>500.000<a href="#" rel="tooltip" data-placement="top" data-original-title="Precio de referencia">*</a></b></span>
             </div>
           </div>
           <div class="span4">
@@ -135,13 +141,14 @@
                 <a href="#" class="btn btn-small">Quitar</a>
                 <a href="goto-offer.html#" class="btn btn-danger btn-small w-arrow">COTIZAR <i class="icon-play"></i></a>
               </div>
-              <span>$ <b>USD 500.000</b></span>
+              <span>$ <b>500.000<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Precio de referencia">*</a></sup></b></span>
             </div>
           </div>
           
         </div>
         <a href="compare.html" class="btn btn-warning btn-small pull-right">Comparar</a>
       </div>
+      <p>* Los precios son de referencia. El precio final varía según la oferta</p>
     </section>
     <!-- end main content-->
   </div>
@@ -165,7 +172,7 @@
   <div class="modal hide fade vehicle" id="car-modal">
     <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      <h3>Ford - 2012 Super Duty <span class="pull-right">$ USD 50.000</h3>
+      <h3>Ford - 2012 Super Duty <span class="pull-right">$ 50.000<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Precio de referencia">*</a></sup></h3>
     </div>
     <div class="modal-body">
       <div id="modalCarousel" class="carousel slide">
@@ -229,7 +236,7 @@
       <div class="related pull-left">
         <a href="#" class="btn">Entérate qué opinan los expertos</a>
       </div>
-      <a href="#" class="btn" data-dismiss="modal">Close</a>
+      <a href="#" class="btn" data-dismiss="modal">Cerrar</a>
       <a href="goto-offer.html" class="btn btn-danger w-arrow">COTIZAR <i class="icon-play"></i></a>
     </div>
   </div>

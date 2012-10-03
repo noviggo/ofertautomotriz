@@ -25,6 +25,8 @@ $(function(){
   $('#car-modal, #login-modal').modal('hide');
   $('.slide-btn').click(function() {
       menu_follow(this);
+      $('.teach-message').hide();
   });
-  $('.dropdown-toggle').dropdown()
+  $('.dropdown-toggle').dropdown();
+  $('.container a').tooltip();
 })
