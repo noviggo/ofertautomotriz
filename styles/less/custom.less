@@ -54,6 +54,11 @@ header{
   }
   .user-nav{
     margin-top: 30px;
+    &.right-align{
+      .dropdown-menu{
+        text-align: left;
+      }
+    }
     .currency{
       .nav-item{
         padding: 0 10px;
@@ -68,6 +73,24 @@ header{
         color: #DF4800;
       }
     }
+  }
+  .socialmedia{
+    float: right;
+    margin-top: 19px;
+    padding: 8px 8px 2px;
+    background-color: rgba(0,0,0,0.3);
+  }
+  .logged .socialmedia{
+    margin-top: 29px;
+  }
+  [class*="sm"]{
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent url('@{url-img}sm-top.png') left top no-repeat;
+  }
+  .sm-twitter{
+    background-position: right top;
   }
 }
 //-------
