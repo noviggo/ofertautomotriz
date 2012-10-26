@@ -14,17 +14,10 @@
 <body class="">
   <header class="container">
     <h1  class="pull-left brand"><a href="index.html"><img src="styles/img/logo-ofertautomotriz.png" alt="ofertautomotriz.com"></a></h1>
-    <nav class="pull-right user-nav logged span3 right-align">
+    <nav class="pull-right user-nav right-align">
       <span class="currency nav"><a href="#" class="nav-item active">UF</a><a href="#" class="nav-item">USD</a></span>
-      <div class="dropdown pull-right">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user"></i> Matías Benegas</a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-          <li><a href="my-account.html"><!-- <i class="icon-user"></i>  -->Mi perfil</a></li>
-          <li><a href="mis-cotiz.html"><!-- <i class="icon-orders"></i>  -->Mis cotizaciones</a></li>
-          <li class="divider"></li>
-          <li><a href="index.html"><!-- <i class="icon-logout"></i>  -->Salir</a></li>
-        </ul>
-      </div>
+      <a href="#login-modal" data-toggle="modal" class="btn">INGRESAR</a>
+      <a href="register.html" class="btn btn-danger w-arrow">REGISTRARSE <i class="icon-play"></i></a>
       <div class="socialmedia">
         <a href="#" class="sm-facebook"></a>
         <a href="#" class="sm-twitter"></a>
@@ -73,11 +66,23 @@
     <!-- main content-->
     <section id="compare" class="row span12 content">
       <div class="title-box clearfix">
-        <h3 class="span8">Mi cuenta</h3>
+        <h3 class="span8">Cotizar mi selección</h3>
       </div>
       <div id="offer-form" class="form-view row-fluid">
-        <p>vista de Perfil de usuario</p>
-      </div>
+        <section class="product span12">
+          <img src="images/truck-compare.png" alt="">
+          <div class="product-desc">
+            <h4 class="heading">2012 Ford - E Series Cabina regular 4x2 137'WB XL</h4>
+            <p>Eum iriure dolor in hendrerit in vulputate velit esse molestie consequat vel illum. Et accumsan et iusto odio dignissim qui blandit praesent. Qui sequitur mutationem consuetudium lectorum mirum est, notare quam littera gothica quam nunc.</p>
+            <p class="price">$24.345<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Precio de referencia">*</a></sup></p>
+          </div>
+        </section>
+        <section class="span12">
+          <h5>En buena hora!</h5>
+          <p>Su cuenta se ha generado exitosamente. Recibirá un correo electrónico para confirmar su registro y asi podra visualizar el estado de su solicitud de cotización.</p>
+          <p>Muchas Gracias por confiar en ofertautomotriz.com</p>
+        </section>
+     </div>
     </section>
     <!-- end main content-->
   </div>
@@ -98,5 +103,41 @@
 
   </footer>
   <!-- modal -->
+  <!-- modal -->
+  
+  <div class="modal hide fade vehicle" id="login-modal">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3>Ingresar a ofertautomotriz.com</h3>
+    </div>
+    <div class="modal-body">
+      <p></p>
+        <form class="form-horizontal">
+          <div class="control-group">
+            <label class="control-label" for="inputEmail">Email</label>
+            <div class="controls">
+              <input type="text" id="inputEmail" placeholder="Email">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="inputPassword">Password</label>
+            <div class="controls">
+              <input type="password" id="inputPassword" placeholder="Password">
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <label class="checkbox">
+                <input type="checkbox"> Remember me
+              </label>
+             
+            </div>
+          </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+       <a href="mis-cotiz.html" class="btn btn-primary">Sign in</a>
+    </div>
+  </div>
 </body>
 </html>
