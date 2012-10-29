@@ -29,5 +29,10 @@ $(function(){
   });
   $('.dropdown-toggle').dropdown();
   $('.container a').tooltip();
-  $(".collapse").collapse()
+  $(".collapse").collapse();
+  $('#open-reg-form, #close-reg-form').click(function(e) {
+    e.preventDefault();
+    $('#register-info').slideToggle('slow');
+    $('#login-info').slideToggle('slow');
+  });
 })
