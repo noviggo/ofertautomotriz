@@ -14,17 +14,10 @@
 <body class="">
   <header class="container">
     <h1  class="pull-left brand"><a href="index.html"><img src="styles/img/logo-ofertautomotriz.png" alt="ofertautomotriz.com"></a></h1>
-    <nav class="pull-right user-nav logged span3 right-align">
+    <nav class="pull-right user-nav right-align">
       <span class="currency nav"><a href="#" class="nav-item active">UF</a><a href="#" class="nav-item">USD</a></span>
-      <div class="dropdown pull-right">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user"></i> Matías Benegas</a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-          <li><a href="my-account.html"><!-- <i class="icon-user"></i>  -->Mi perfil</a></li>
-          <li><a href="mis-cotiz.html"><!-- <i class="icon-orders"></i>  -->Mis cotizaciones</a></li>
-          <li class="divider"></li>
-          <li><a href="index.html"><!-- <i class="icon-logout"></i>  -->Salir</a></li>
-        </ul>
-      </div>
+      <a href="#login-modal" data-toggle="modal" class="btn">INGRESAR</a>
+      <a href="register.html" class="btn btn-danger w-arrow">REGISTRARSE <i class="icon-play"></i></a>
       <div class="socialmedia">
         <a href="#" class="sm-facebook"></a>
         <a href="#" class="sm-twitter"></a>
@@ -77,11 +70,81 @@
       </div>
       <div id="offer-form" class="form-view row-fluid">
         <section class="product span12">
-          <img src="images/autos/vw_jetta_t.jpg" alt="">
+          <img src="images/autos/ford_focus_t.jpg" alt="">
           <div class="product-desc">
-            <h4 class="heading">Volkswagen Jetta Sedan 2013</h4>
-            <p>Rines de aluminio 16"/ Llantas 205/55 R16, Sistema antibloqueo de frenos (ABS). Sistema de bloqueo electrónico del diferencial (EDL). Sistema de control de tracción (ASR). Bolsas de aire frontales Conductor / Pasajero (Airbag)</p>
-            <p class="price">$24.345<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Precio de referencia">*</a></sup></p>
+            <h4 class="heading">Ford Focus SD 2013</h4>
+            <p>Su potente y eficiente motorización de 1.6 litros 16V y 115 CV proporciona una excelente conducción, tanto en ciudad como en ruta, para que te muevas con total libertad. </p>
+            <p class="price">$16.600<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Precio de referencia">*</a></sup></p>
+          </div>
+        </section>
+        <section class="span12" id="account-info">
+          <div id="login-info">
+            <div class="span3">
+              <legend>Ingresar a tu cuenta</legend>
+            </div>
+            <div class="span9">
+              <p>
+                <label class="required">Nombre de usuario <span>*</span></label>
+                <input type="text" class="input-xxlarge" placeholder="">
+              </p>
+              <p>
+                <label class="required">Contraseña<span>*</span></label>
+                <input type="text" class="input-xxlarge" placeholder="">
+              </p>
+              <h5>O puedes ingresar con:</h5>
+              <p><a href="#" class="btn btn-primary">Google +</a> <a href="#" class="btn btn-primary">Facebook</a> <a href="#"class="btn btn-primary">Twitter</a></p>
+              <h5>¿Aún no tienes cuenta?<a href="#" id="open-reg-form"> Créala ahora</a></h5>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div id="register-info" class="hide">
+            <div class="span3">
+              <legend>Datos Personales</legend>
+            </div>
+            <div class="span9">
+              <p>
+                <label class="required">Nombre <span>*</span></label>
+                <input type="text" class="input-xxlarge" placeholder="">
+              </p>
+              <p>
+                <label class="required">RUT <span>*</span></label>
+                <input type="text" class="input-xxlarge" placeholder="">
+              </p>
+              <p>
+                <label class="required">Email <span>*</span></label>
+                <input type="text" class="input-xxlarge" placeholder="">
+              </p>
+              <p>
+                <label class="required">Teléfono de contacto <span>*</span></label>
+                <input type="text" class="input-xxlarge" placeholder="">
+              </p>
+              <p class="input-prepend">
+                <label>Fecha de Nacimiento</label>
+                <span class="add-on"><i class="icon-calendar"></i></span><input class="span3" id="prependedInput" size="16" type="text" placeholder="dd/mm/aa">
+              </p>
+              <p>
+                <label class="required">Sexo <span>*</span></label>
+                <span class="checkbox">
+                  <label class="checkbox"><input type="checkbox"> Masculino</label>
+                  <label class="checkbox"><input type="checkbox"> Femenino</label>
+                </span>
+              </p>
+              <p>&nbsp;</p>
+              <legend>Configuración de cuenta</legend>
+              <p>
+                <label class="required">Nombre de usuario <span>*</span></label>
+                <input type="text" class="input-xxlarge" placeholder="">
+              </p>
+              <p>
+                <label class="required">Contraseña<span>*</span></label>
+                <input type="text" class="input-xxlarge" placeholder="">
+              </p>
+              <p>
+                <label class="required">Verificación de contraseña <span>*</span></label>
+                <input type="text" class="input-xxlarge" placeholder="">
+              </p>
+              <p>Si ya tienes cuenta <a href="#" id="close-reg-form">ingresa con tus datos de acceso</a>.</p>
+            </div>
           </div>
         </section>
         <section class="span12">
@@ -117,10 +180,16 @@
               <label class="required">Cobertura</label>
               <input type="text" class="input-xxlarge" placeholder="">
             </p>
+            <p><img src="images/captcha.jpeg" alt=""></p>
           </div>
         </section>
         <section class="form-actions span12 clearfix">
-          <p class="span9 offset3"><a href="mis-cotiz.html" class="btn btn-danger w-arrow pull-left">Confirmar Solicitud <i class="icon-play"></i></a></p>
+          <p>
+            <span class="checkbox">
+              <label class="checkbox"><input type="checkbox"> Acepto haber leído y aprobado los <a href="#">Términos y condiciones</a></label>
+            </span>
+            <a href="offer-reg-conf_1.html" class="btn btn-danger pull-right">Confirmar Solicitud y Registrarme</a>
+          </p>
         </section>
       </div>
     </section>
