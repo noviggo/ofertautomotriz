@@ -14,17 +14,10 @@
 <body class="">
   <header class="container">
     <h1  class="pull-left brand"><a href="index.html"><img src="styles/img/logo-ofertautomotriz.png" alt="ofertautomotriz.com"></a></h1>
-    <nav class="pull-right user-nav logged span3 right-align">
+    <nav class="pull-right user-nav right-align">
       <span class="currency nav"><a href="#" class="nav-item active">UF</a><a href="#" class="nav-item">USD</a></span>
-      <div class="dropdown pull-right">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user"></i> Matías Benegas</a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-          <li><a href="my-account.html"><!-- <i class="icon-user"></i>  -->Mi perfil</a></li>
-          <li><a href="mis-cotiz.html"><!-- <i class="icon-orders"></i>  -->Mis cotizaciones</a></li>
-          <li class="divider"></li>
-          <li><a href="index.html"><!-- <i class="icon-logout"></i>  -->Salir</a></li>
-        </ul>
-      </div>
+      <a href="#login-modal" data-toggle="modal" class="btn">INGRESAR</a>
+      <a href="register.html" class="btn btn-danger w-arrow">REGISTRARSE <i class="icon-play"></i></a>
       <div class="socialmedia">
         <a href="#" class="sm-facebook"></a>
         <a href="#" class="sm-twitter"></a>
@@ -77,52 +70,22 @@
       </div>
       <div id="offer-form" class="form-view row-fluid">
         <section class="product span12">
-          <img src="images/autos/vw_jetta_t.jpg" alt="">
+          <img src="images/autos/ford_focus_t.jpg" alt="">
           <div class="product-desc">
-            <h4 class="heading">Volkswagen Jetta Sedan 2013</h4>
-            <p>Rines de aluminio 16"/ Llantas 205/55 R16, Sistema antibloqueo de frenos (ABS). Sistema de bloqueo electrónico del diferencial (EDL). Sistema de control de tracción (ASR). Bolsas de aire frontales Conductor / Pasajero (Airbag)</p>
-            <p class="price">$24.345<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Precio de referencia">*</a></sup></p>
+            <h4 class="heading">Ford Focus SD 2013</h4>
+            <p>Su potente y eficiente motorización de 1.6 litros 16V y 115 CV proporciona una excelente conducción, tanto en ciudad como en ruta, para que te muevas con total libertad.</p>
+            <p class="price">$16.600<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Precio de referencia">*</a></sup></p>
           </div>
         </section>
         <section class="span12">
-          <div class="span3">
-            <legend>Desea financiar su vehiculo?</legend>
-            <span class="help-block">Complete solamente si desea financiamiento</span>
-          </div>
-          <div class="span9">
-            <p>
-              <label class="required">Monto del pie</label>
-              <input type="text" class="input-xxlarge" placeholder="">
-            </p>
-            <p>
-              <label class="required">Plazo del crédito</label>
-              <input type="text" class="input-xxlarge" placeholder="">
-            </p>
-            <p>
-              <label class="required">Renta líquida</label>
-              <input type="text" class="input-xxlarge" placeholder="">
-            </p>
+        	<div class="alert alert-success">
+        		<button type="button" class="close" data-dismiss="alert">×</button>	
+          	<h5>En buena hora!</h5>
+          	<p>Su cuenta se ha generado exitosamente. Recibirá un correo electrónico para confirmar su registro y asi podra visualizar el estado de su solicitud de cotización.	</p>
+          	<p><b>Muchas Gracias por confiar en ofertautomotriz.com</b></p>
           </div>
         </section>
-        <section class="span12">
-          <div class="span3">
-            <legend>Datos Seguro</legend>
-          </div>
-          <div class="span9">
-            <p>
-              <label class="required">Deducible</label>
-              <input type="text" class="input-xxlarge" placeholder="">
-            </p>
-            <p>
-              <label class="required">Cobertura</label>
-              <input type="text" class="input-xxlarge" placeholder="">
-            </p>
-          </div>
-        </section>
-        <section class="form-actions span12 clearfix">
-          <p class="span9 offset3"><a href="mis-cotiz.html" class="btn btn-danger w-arrow pull-left">Confirmar Solicitud <i class="icon-play"></i></a></p>
-        </section>
-      </div>
+     </div>
     </section>
     <!-- end main content-->
   </div>
@@ -143,5 +106,41 @@
 
   </footer>
   <!-- modal -->
+  <!-- modal -->
+  
+  <div class="modal hide fade vehicle" id="login-modal">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3>Ingresar a ofertautomotriz.com</h3>
+    </div>
+    <div class="modal-body">
+      <p></p>
+        <form class="form-horizontal">
+          <div class="control-group">
+            <label class="control-label" for="inputEmail">Email</label>
+            <div class="controls">
+              <input type="text" id="inputEmail" placeholder="Email">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="inputPassword">Password</label>
+            <div class="controls">
+              <input type="password" id="inputPassword" placeholder="Password">
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <label class="checkbox">
+                <input type="checkbox"> Remember me
+              </label>
+             
+            </div>
+          </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+       <a href="mis-cotiz.html" class="btn btn-primary">Sign in</a>
+    </div>
+  </div>
 </body>
 </html>

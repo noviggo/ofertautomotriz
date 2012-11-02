@@ -60,7 +60,7 @@
               <label for="to_value">Hasta:</label>
               <span class="input-prepend"><span class="add-on">$</span><input type="number" name="to_value" value="" id="to_value" class="input-small"></span>
             </p>
-          </div>
+                 </div>
           <div class="span5">
             <h4>Buscar modelo</h4>
             <p><input type="text" name="model" value="" id="model"></p></p>
@@ -73,55 +73,16 @@
     <!-- main content-->
     <section id="compare" class="row span12 content">
       <div class="title-box clearfix">
-        <h3 class="span8">Cotizar mi selección</h3>
+        <h3 class="span8">Mis cotizaciones > Oferta recibida</h3>
       </div>
-      <div id="offer-form" class="form-view row-fluid">
-        <section class="product span12">
-          <img src="images/autos/vw_jetta_t.jpg" alt="">
-          <div class="product-desc">
-            <h4 class="heading">Volkswagen Jetta Sedan 2013</h4>
-            <p>Rines de aluminio 16"/ Llantas 205/55 R16, Sistema antibloqueo de frenos (ABS). Sistema de bloqueo electrónico del diferencial (EDL). Sistema de control de tracción (ASR). Bolsas de aire frontales Conductor / Pasajero (Airbag)</p>
-            <p class="price">$24.345<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Precio de referencia">*</a></sup></p>
-          </div>
-        </section>
-        <section class="span12">
-          <div class="span3">
-            <legend>Desea financiar su vehiculo?</legend>
-            <span class="help-block">Complete solamente si desea financiamiento</span>
-          </div>
-          <div class="span9">
-            <p>
-              <label class="required">Monto del pie</label>
-              <input type="text" class="input-xxlarge" placeholder="">
-            </p>
-            <p>
-              <label class="required">Plazo del crédito</label>
-              <input type="text" class="input-xxlarge" placeholder="">
-            </p>
-            <p>
-              <label class="required">Renta líquida</label>
-              <input type="text" class="input-xxlarge" placeholder="">
-            </p>
-          </div>
-        </section>
-        <section class="span12">
-          <div class="span3">
-            <legend>Datos Seguro</legend>
-          </div>
-          <div class="span9">
-            <p>
-              <label class="required">Deducible</label>
-              <input type="text" class="input-xxlarge" placeholder="">
-            </p>
-            <p>
-              <label class="required">Cobertura</label>
-              <input type="text" class="input-xxlarge" placeholder="">
-            </p>
-          </div>
-        </section>
-        <section class="form-actions span12 clearfix">
-          <p class="span9 offset3"><a href="mis-cotiz.html" class="btn btn-danger w-arrow pull-left">Confirmar Solicitud <i class="icon-play"></i></a></p>
-        </section>
+      <div id="offer-form" class="form-view row-fluid" style="text-align:center">
+        <img src="images/temporal/off-view.png" alt="">
+      </div>
+      <div class="form-actions right-align clearfix">
+        <p>
+          <a href="mis-cotiz.html" class="btn">Volver</a>
+          <a href="#confirm-modal" data-toggle="modal" class="btn btn-danger w-arrow">Confirmar Opcion de Compra <i class="icon-play"></i></a>
+        </p>
       </div>
     </section>
     <!-- end main content-->
@@ -143,5 +104,24 @@
 
   </footer>
   <!-- modal -->
+  
+  <div class="modal hide fade vehicle" id="confirm-modal">
+    <div class="modal-header">
+      <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
+      <a href="offer-oc.html" class="close">&times;</a>
+      <h3>Opción de compra enviada</confirmaci></h3>
+    </div>
+    <div class="modal-body text-content">
+      <h6>En hora buena! Tu opción de compra ha sido enviada a la consecionaria. Ellos estarán aguardando tu visita!</h6>
+      <p>Has decidido visitar a <b>[Nombre del comercio]</b>, en <b>[Direccion postal del comercio]</b></p>
+      <iframe width="522" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.ar/maps?near=Soc+Concesionaria+del+Elqui,+Avda+Andres+Bello+2711,+Of+1003,+Santiago,+Regi%C3%B3n+Metropolitana,+Chile&amp;geocode=Cf_I3zqDPZ-WFbUfAv4dXaPK-ylXEt9EQs9iljE4PYeb-yM5gQ&amp;q=automotor&amp;f=l&amp;dq=consecionaria,+loc:+Santiago,+Regi%C3%B3n+Metropolitana+de+Santiago+de+Chile,+Chile&amp;ie=UTF8&amp;hq=automotor&amp;hnear=&amp;t=m&amp;fll=-33.414598,-70.60846&amp;fspn=0.002696,0.004812&amp;st=115703629269948245352&amp;rq=1&amp;ev=zi&amp;split=1&amp;ll=-33.414597,-70.608459&amp;spn=0.002696,0.004812&amp;z=14&amp;iwloc=A&amp;cid=4624560496224392115&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com.ar/maps?near=Soc+Concesionaria+del+Elqui,+Avda+Andres+Bello+2711,+Of+1003,+Santiago,+Regi%C3%B3n+Metropolitana,+Chile&amp;geocode=Cf_I3zqDPZ-WFbUfAv4dXaPK-ylXEt9EQs9iljE4PYeb-yM5gQ&amp;q=automotor&amp;f=l&amp;dq=consecionaria,+loc:+Santiago,+Regi%C3%B3n+Metropolitana+de+Santiago+de+Chile,+Chile&amp;ie=UTF8&amp;hq=automotor&amp;hnear=&amp;t=m&amp;fll=-33.414598,-70.60846&amp;fspn=0.002696,0.004812&amp;st=115703629269948245352&amp;rq=1&amp;ev=zi&amp;split=1&amp;ll=-33.414597,-70.608459&amp;spn=0.002696,0.004812&amp;z=14&amp;iwloc=A&amp;cid=4624560496224392115&amp;source=embed" style="color:#0000FF;text-align:left">Ver mapa más grande</a></small>
+      <p>No olvides imprimir tu comprobante!</p>
+      <p>Muchas gracias por ser parte de ofertautomotriz.com</p>
+    </div>
+    <div class="modal-footer">
+        <a href="offer-oc.html" class="btn">Cerrar</a>
+       <a href="offer-oc.html" class="btn btn-primary btn-danger">Imprimir</a>
+    </div>
+  </div>
 </body>
 </html>
