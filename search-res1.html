@@ -10,7 +10,7 @@
     <script src="scripts/bootstrap.js" type="text/javascript"></script>
     <script src='scripts/onload.js' type='text/javascript'></script>
     <script type="text/javascript" charset="utf-8">
-      
+
     </script>
   </head>
 </html>
@@ -65,7 +65,7 @@
         </form>
       </div>
     </section>
-    
+
     <!-- main content-->
     <section id="search-resoults1" class="row span12 search-resoults1 content">
       <div class="filter-box clearfix">
@@ -172,7 +172,7 @@
           <p class="pull-left">* Los precios son de referencia. El precio final varía según la oferta</p>
           <a href="#" class="btn pull-right">Cargar más resultados</a>
         </div>
-        
+
       </div>
       <div id="selections" class="span4">
         <a href="compare.html" class="btn btn-warning btn-small pull-right">Comparar</a>
@@ -231,8 +231,8 @@
         </ul>
         <p class="copyright">COPYRIGHT 2012 OFERTAUTOMOTRIZ.COM</p>
       </nav>
-      
-     
+
+
     </div>
 
   </footer>
@@ -257,32 +257,56 @@
         </div>
       </div>
       <!-- <div id="slide-btn" class="slide-btn"></div> -->
-      <div class="vehicle-details" id="vehicle-details">
-        <div class="details-modal">
-          <h6>ESPECIFICACIONES TECNICAS</h6>
-          <ul>
-            <li><b>Motor:</b> 3,7L V6</li>
-            <li><b>KMxLt:</b> 4x2 17 city/23 hwy</li>
-            <li><b>Motor:</b> 3,7L V6</li>
-            <li><b>Capacidad:</b> 3 pax</li>
-          </ul>
+      <div class="vehicle-details" id="vehicle-details" >
+        <div class="details-modal" >
+          <div id='details' style= 'overflow: hidden;height: 332px;'>
+            <div id="especificaciones_tecnicas">
+              <a><h6>ESPECIFICACIONES TECNICAS</h6></a>
+              <div class='info_detail'>
+                <div class='basic'>
+                  <ul>
+                    <li><b>motor:</b> 3,7l v6</li>
+                    <li><b>kmxlt:</b> 4x2 17 city/23 hwy</li>
+                    <li><b>motor:</b> 3,7l v6</li>
+                  </ul>
+                </div>
+                <div class='extended hide'>
+                  <ul>
+                    <li><b>capacidad:</b> 3 pax</li>
+                    <li><b>motor:</b> 3,7l v6</li>
+                    <li><b>capacidad:</b> 3 pax</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           <hr class="horizontal-divider">
-          <h6>EQUIPAMIENTO</h6>
-          <ul>
-            <li>Alarma de luces encendidas</li>
-            <li>Asiento del conductor con ajuste en altura</li>
-            <li>Asientos delanteros con ajuste manual</li>
-            <li>Asientos delanteros individuales con consola central</li>
-            <li>Dirección hidráulica</li>
-            <li>...</li>
-          </ul>
-          <p><span class="pull-left"><a href="#"><i class="icon-share"></i> Compartir</a> </span> <span class="pull-right"><a href="#">Ver Ficha Completa</a> :: <a href="#"><i class="icon-file"></i> PDF</a></span></p>
+          <div id="equipamiento">
+            <a ><h6>EQUIPAMIENTO</h6></a>
+            <div class='info_detail'>
+              <div class='basic'>
+                <ul>
+                  <li>Alarma de luces encendidas</li>
+                  <li>Asiento del conductor con ajuste en altura</li>
+                  <li>Asientos delanteros con ajuste manual</li>
+                </ul>
+              </div>
+              <div class='extended hide'>
+                <ul>
+                  <li>Asientos delanteros individuales con consola central</li>
+                  <li>Dirección hidráulica</li>
+                  <li>...</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div id='share'><span class="pull-left"><a href="#"><i class="icon-share"></i> Compartir</a> </span> <span class="pull-right"><a href="#">Ver Ficha Completa</a> :: <a href="#"><i class="icon-file"></i> PDF</a></span></div>
         </div>
         <div class="slide-btn"><span class="teach-message">Ver detalles</span></div>
       </div>
       <div class="misc clearfix">
         <div class="offers pull-left span4">
-          <div class="checkbox"><input type="checkbox" name="" value="" id=""><label for=""><a href="#">Quiero la versión FULL por 
+          <div class="checkbox"><input type="checkbox" name="" value="" id=""><label for=""><a href="#">Quiero la versión FULL por
           solo: $ 57.090<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Precio de referencia">*</a></sup></a></label></div>
         </div>
         <div class="pull-right span2">
@@ -298,7 +322,7 @@
           </ul>
         </div>
       </div>
-      
+
     </div>
     <div class="modal-footer">
       <div class="related pull-left">
@@ -309,7 +333,7 @@
     </div>
   </div>
   <!-- modal -->
-  
+
   <div class="modal hide fade vehicle" id="login-modal">
     <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -335,7 +359,7 @@
               <label class="checkbox">
                 <input type="checkbox"> Remember me
               </label>
-             
+
             </div>
           </div>
         </form>
