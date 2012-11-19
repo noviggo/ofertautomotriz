@@ -2,7 +2,7 @@
 @nav-url:   "../img/nav-sprite.png";
 
 body{
-  background: transparent url("../img/bg.jpg") left top repeat-x;
+  background: transparent url("../img/bg.jpg") left -100px repeat-x;
 }
 .btn-danger.w-arrow{
   padding-right: 5px;
@@ -798,6 +798,54 @@ div.compare-table{
     line-height: 20px;
     border-bottom: 0px none;
   }
+}
+section.form-actions{
+  .btn{
+    margin-right: 20px;
+  }
+}
+th.starred-cell{
+  width: 165px;
+}
+td.starred-cell{
+  background-color: #F0F0F0;
+  vertical-align: middle;
+  span, b{
+    display:block;
+  }
+  span{
+    color: @oaLinks;
+    &.price{
+      font-size: 22px;
+      font-weight: bold;
+    }
+  }
+}
+#offer .table {
+  td, th{
+    padding-left: 15px;
+  }
+  td span{
+    color: @oaLinks;
+    font-weight: bold;
+  }
+  td.starred-cell{
+    span{
+      font-weight: normal;
+      &.price{
+        font-weight: bold;
+      }
+    }
+  }
+  thead th {
+  vertical-align: top;
+  }
+}
+.pill-title{
+  background-color: #F0F0F0;
+  font-size:18px;
+  .border-radius(4px);
+  padding: 6px 15px;
 }
 //footer
 
