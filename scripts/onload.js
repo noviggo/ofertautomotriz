@@ -18,6 +18,41 @@ var menu_follow = function(el){
   state ? $btn.removeClass('arrow-rigth').addClass('arrow-left') : $btn.removeClass('arrow-left').addClass('arrow-rigth');
 }
 
+var accordion_modal = function(element){
+  var status = Number($(element).data('status'));
+  //console.log(status)
+  elements = [especificaciones_tecnicas,seguridad,equipamiento];
+  for(i in elements) if(elements[i] === element) elements.splice(i,1);
+  //for(i in elements) console.log(elements[i].id);
+  switch (status){
+    case 0:
+      //console.log('entro al 0');
+      //aca cuando esta oculto extended y se muestra solo basic
+      $(element).find('.basic, .extended').slideDown('slow');
+      $(element).data('status',status+1);
+      $(elements).find('.basic, .extended').slideUp('slow');
+      $(elements).data('status',0);
+      break;
+    case 1:
+      //console.log('entro al 1');
+      //aca cuando esta extended y basic en show
+      $(element).find('.extended').slideUp('slow');
+      $(element).data('status',status-1);
+      $(elements).find('.basic').slideDown('slow');
+      $(elements).find('.extended').slideUp('slow');
+      $(elements).data('status',status-1);
+      break;
+    case 2:
+      //console.log('entro al 2');
+      //aca cuando esta oculto extended y basic y solo se muesta el titulo
+      $(element).find('.basic').slideDown('slow');
+      $(element).data('status',0);
+      $(elements).find('.basic').slideDown('slow');
+      $(elements).find('.extended').slideUp('slow');
+      $(elements).data('status',status-1);
+      break;
+  }
+}
 $(function(){
   $('#myCarousel, #carousel-about').carousel();
   $('#myCarousel').on('slid', function(){set_active_item_when_slide(this);})
@@ -35,4 +70,5 @@ $(function(){
     $('#register-info').slideToggle('slow');
     $('#login-info').slideToggle('slow');
   });
+  $([especificaciones_tecnicas,seguridad,equipamiento]).data('status',0);
 })
