@@ -180,9 +180,12 @@
   <div class="modal hide fade vehicle" id="car-modal">
     <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      <h3>Ford Focus SD 2013 <span class="pull-right">$ 16.000<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Precio de referencia">*</a></sup></h3>
+      <h3>Ford Focus Hatch Back SEL <span class="pull-right">$ 11.980.000<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Precio de referencia">*</a></sup></h3>
     </div>
     <div class="modal-body">
+      <div class="green-label">
+        <img src="images/co2-label.png" alt="">
+      </div>
       <div id="modalCarousel" class="carousel slide">
         <!-- Carousel items -->
         <div class="carousel-inner">
@@ -197,33 +200,97 @@
         </div>
       </div>
       <!-- <div id="slide-btn" class="slide-btn"></div> -->
-      <div class="vehicle-details" id="vehicle-details">
-        <div class="details-modal">
-          <h6>ESPECIFICACIONES TECNICAS</h6>
-          <ul>
-            <li><b>Motor:</b> 3,7L V6</li>
-            <li><b>KMxLt:</b> 4x2 17 city/23 hwy</li>
-            <li><b>Motor:</b> 3,7L V6</li>
-            <li><b>Capacidad:</b> 3 pax</li>
-          </ul>
+      <div class="vehicle-details" id="vehicle-details" >
+        <div class="details-modal" >
+          <div id='details' style= 'overflow: hidden;height: 332px;'>
+            <div id="especificaciones_tecnicas">
+              <h6 class="details-title"><a onclick="accordion_modal(especificaciones_tecnicas);">ESPECIFICACIONES TECNICAS</a></h6>
+              <div class='info_detail'>
+                <div class='basic'>
+                  <ul>
+                    <li><b>Cilindrada</b> 2.000 cc /4 cilindros</li>
+                    <li><b>Potencia:</b> 160 HP a 6000 rpm /180 Nm</li>
+                    <li><b>Transmisión:</b> Automática 6 velocidades</li>
+                    <li><b>Consumo de combustible: (Bencina)</b>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Ciudad</th>
+                            <th>Carretera</th>
+                            <th>Mixto</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>13 km/l</td>
+                            <td>16 km/l</td>
+                            <td>14 km/l</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </li>
+                  </ul>
+                </div>
+                <div class='extended hide'>
+                  <ul>
+                    <li><b>Torque:</b> 198 N.m @ 4450</li>
+                    <li><b>Peso:</b> 1296 kg</li>
+                    <li><b>Suspension:</b> Indep McPherson / Indep Multi Link c/barra estabilizadora</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          <hr class="horizontal-divider" style="display: none">
+          <div id="seguridad" style="display: none">
+            <h6 class="details-title"><a onclick="accordion_modal(seguridad);">SEGURIDAD</a></h6>
+            <div class='info_detail'>
+              <div class='basic'>
+                <ul>
+                  <li><b>Frenos:</b> Disco</li>
+                  <li><b>Airbags:</b> 6</li>
+                </ul>
+              </div>
+              <div class='extended hide'>
+                <ul>
+                  <li><b>Sensores de retroceso o cámara:</b> N/A</li>
+                  <li><b>Control de tracción:</b> N/A</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <hr class="horizontal-divider">
-          <h6>EQUIPAMIENTO</h6>
-          <ul>
-            <li>Alarma de luces encendidas</li>
-            <li>Asiento del conductor con ajuste en altura</li>
-            <li>Asientos delanteros con ajuste manual</li>
-            <li>Asientos delanteros individuales con consola central</li>
-            <li>Dirección hidráulica</li>
-            <li>...</li>
-          </ul>
-          <p><span class="pull-left"><a href="#"><i class="icon-share"></i> Compartir</a> </span> <span class="pull-right"><a href="#">Ver Ficha Completa</a> :: <a href="images/autos/3_Ficha técnica focus SEL y SE.pdf" target="_blank"><i class="icon-file"></i> PDF</a></span></p>
+          <div id="equipamiento">
+            <h6 class="details-title"><a onclick="accordion_modal(equipamiento);">EQUIPAMIENTO</a></h6>
+            <div class='info_detail'>
+              <div class='basic'>
+                <ul>
+                  <li>Climatizador</li>
+                  <li>Sun roof</li>
+                  <li>6 airbags</li>
+                  <li>Bluetooth</li>
+                </ul>
+              </div>
+              <div class='extended hide'>
+                <ul>
+                  <li><b>Tapiz:</b> Tela</li>
+                  <li><b>Volante:</b> Regulable</li>
+                  <li><b>Llantas:</b> Aleacion</li>
+                  <li><b>Aro:</b> 16" y 5 rayos"</li>
+                  <li><b>Traccion:</b> 4x2</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+          <div id='share'><span class="pull-left"><a href="#"><i class="icon-share"></i> Compartir</a> </span> <span class="pull-right"><a href="#">Ver Ficha Completa</a> :: <a href="images/autos/3_Ficha técnica focus SEL y SE.pdf" target="_blank"><i class="icon-file"></i> PDF</a></span></div>
         </div>
         <div class="slide-btn"><span class="teach-message">Ver detalles</span></div>
       </div>
       <div class="misc clearfix">
         <div class="offers pull-left span4">
-          <div class="checkbox"><input type="checkbox" name="" value="" id=""><label for=""><a href="#">Quiero la versión FULL por 
-          solo: $ 57.090<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Precio de referencia">*</a></sup></a></label></div>
+          <div class="checkbox"><input type="checkbox" name="" value="" id=""><label for=""><a href="#">Quiero la versión FULL por
+          solo: $ 12.000.000<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Precio de referencia">*</a></sup></a></label></div>
         </div>
         <div class="pull-right span2">
           <ul class="nav nav-pills">
@@ -238,16 +305,17 @@
           </ul>
         </div>
       </div>
-      
+
     </div>
     <div class="modal-footer">
       <div class="related pull-left">
         <a href="#" class="btn">Entérate qué opinan los expertos</a>
       </div>
       <a href="#" class="btn" data-dismiss="modal">Cerrar</a>
-      <a href="offer_1.html" class="btn btn-danger w-arrow">COTIZAR <i class="icon-play"></i></a>
+      <a href="offer.html" class="btn btn-danger w-arrow">COTIZAR <i class="icon-play"></i></a>
     </div>
   </div>
+  
   <!-- modal -->
   
   <div class="modal hide fade vehicle" id="login-modal">
