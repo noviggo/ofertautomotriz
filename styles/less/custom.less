@@ -153,8 +153,8 @@ display:none;
 .carousel-paginator{
   display:block;
   position:absolute;
-  bottom: 25px;
-  right: 52px;
+  bottom: 5px;
+  right: 5px;
   width: 90%;
   span{
     display: inline-block;
@@ -163,7 +163,7 @@ display:none;
       display: inline-block;
     }
     img{
-      width: 75px;
+      width: 45px;
       transition:width 0.5s;
       -moz-transition:width 0.5s; /* Firefox 4 */
       -webkit-transition:width 0.5s; /* Safari and Chrome */
@@ -654,6 +654,23 @@ display:none;
         border-style: solid;
         display: block;
         width: 0;
+      }
+    }
+    .details-title{
+      a{
+        display: block;
+        cursor: pointer;
+        &:hover{
+          background: rgba(0,0,0,0.1);
+          text-decoration: none;
+        }
+        &:after{
+          content:"ver/ocultar";
+          display: inline-block;
+          float: right;
+          font-weight: normal;
+          font-size: 10px;
+        }
       }
     }
   }
