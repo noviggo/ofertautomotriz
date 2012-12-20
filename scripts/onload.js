@@ -20,9 +20,10 @@ var menu_follow = function(el){
 
 var accordion_modal = function(element){
   var status = Number($(element).data('status'));
-  //console.log(status)
-  elements = [especificaciones_tecnicas,seguridad,equipamiento];
-  for(i in elements) if(elements[i] === element) elements.splice(i,1);
+  var elements = /$_v0/.test(element.id) ? accor.v1.slice(0) : accor.v0.slice(0);
+  for(i in elements) {
+    if(elements[i].id == element.id) elements.splice(i,1);
+  }
   //for(i in elements) console.log(elements[i].id);
   switch (status){
     case 0:
@@ -70,5 +71,9 @@ $(function(){
     $('#register-info').slideToggle('slow');
     $('#login-info').slideToggle('slow');
   });
-  $([especificaciones_tecnicas,seguridad,equipamiento]).data('status',0);
+
+  accor = { v0: [especificaciones_tecnicas_v0,seguridad_v0,equipamiento_v0],
+            v1: [especificaciones_tecnicas_v1,seguridad_v1,equipamiento_v1]
+          }
+          for(ver in accor) for(var i=0,element;element = accor[ver][i];i++)$(element).data('status',0);
 });
