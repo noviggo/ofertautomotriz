@@ -20,7 +20,7 @@ var menu_follow = function(el){
 
 var accordion_modal = function(element){
   var status = Number($(element).data('status'));
-  var elements = /$_v0/.test(element.id) ? accor.v1.slice(0) : accor.v0.slice(0);
+  var elements = /v0$/.test(element.id) ? accor.v0.slice(0) : accor.v1.slice(0);
   for(i in elements) {
     if(elements[i].id == element.id) elements.splice(i,1);
   }
