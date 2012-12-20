@@ -14,10 +14,17 @@
 <body class="">
   <header class="container">
     <h1  class="pull-left brand"><a href="index.html"><img src="styles/img/logo-ofertautomotriz.png" alt="ofertautomotriz.com"></a></h1>
-    <nav class="pull-right user-nav right-align">
+    <nav class="pull-right user-nav logged span3 right-align">
       <span class="currency nav"><a href="#" class="nav-item active">UF</a><a href="#" class="nav-item">USD</a></span>
-      <a href="#login-modal" data-toggle="modal" class="btn">INGRESAR</a>
-      <a href="register.html" class="btn btn-danger w-arrow">REGISTRARSE <i class="icon-play"></i></a>
+      <div class="dropdown pull-right">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user"></i> Matías Benegas</a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+          <li><a href="my-account.html"><!-- <i class="icon-user"></i>  -->Mi perfil</a></li>
+          <li><a href="mis-cotiz.html"><!-- <i class="icon-orders"></i>  -->Mis cotizaciones</a></li>
+          <li class="divider"></li>
+          <li><a href="index.html"><!-- <i class="icon-logout"></i>  -->Salir</a></li>
+        </ul>
+      </div>
       <div class="socialmedia">
         <a href="#" class="sm-facebook"></a>
         <a href="#" class="sm-twitter"></a>
@@ -64,26 +71,208 @@
     </section>
     
     <!-- main content-->
-    <section id="compare" class="row span12 content">
+    <section id="offer" class="row span12 content">
       <div class="title-box clearfix">
         <h3 class="span8">Cotizar mi selección</h3>
       </div>
       <div id="offer-form" class="form-view row-fluid">
         <section class="product span12">
-          <img src="images/autos/ford_focus_t.jpg" alt="">
+          <div class="alert alert-success">
+        		<button type="button" class="close" data-dismiss="alert">×</button>	
+          	<h5>En buena hora!</h5>
+          	<p>Recibirá un correo electrónico para confirmar su solicitud.	</p>
+          	<p>A continuación arma tu paquete o escoge la consecionaria, la financiera y/o la aseguradora que prefieras.</p>
+          	<p><b>Muchas Gracias por confiar en ofertautomotriz.com</b></p>
+          </div>
+          <img src="images/autos/ford_focus_hb_t.jpg" alt="">
           <div class="product-desc">
-            <h4 class="heading">Ford Focus SD 2013</h4>
+            <h4 class="heading">Ford Focus Hatchback SEL</h4>
             <p>Su potente y eficiente motorización de 1.6 litros 16V y 115 CV proporciona una excelente conducción, tanto en ciudad como en ruta, para que te muevas con total libertad.</p>
-            <p class="price">$16.600<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Precio de referencia">*</a></sup></p>
+            <p class="price">$ 11.980.000<sup><a href="#" rel="tooltip" data-placement="top" data-original-title="Precio de referencia">*</a></sup></p>
           </div>
         </section>
         <section class="span12">
-        	<div class="alert alert-success">
-        		<button type="button" class="close" data-dismiss="alert">×</button>	
-          	<h5>En buena hora!</h5>
-          	<p>Su cuenta se ha generado exitosamente. Recibirá un correo electrónico para confirmar su registro y asi podra visualizar el estado de su solicitud de cotización.	</p>
-          	<p><b>Muchas Gracias por confiar en ofertautomotriz.com</b></p>
-          </div>
+          <h4 class="pill-title">1. Consesionaria</h4>
+          <table class="table table-stripped">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Empresa</th>
+                <th>Detalles</th>
+                <th class="starred-cell">Precio Final</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="radio" name="offer-car" value="" id=""></td>
+                <td><img src="images/brands/valenzuela_delarze.jpg" alt=""></td>
+                <td>
+                  <p><b>Nombre comercial:</b> Valenzuela & Delarze</p>
+                  <p><b>Bono de descuento:</b> $1.000.000</p>
+                  <p><b>Promociones:</b> de regalo un iPad2 (compras hasta el 20/11/2012)</p>
+                </td>
+                <td class="starred-cell">
+                  <span class="price">$ 10.980.000</span>
+                  <b>Bono:</b>
+                  <span>1.000.000</span>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="offer-car" value="" id=""></td>
+                <td><img src="images/brands/summit.jpg" alt=""></td>
+                <td>
+                  <p><b>Nombre comercial:</b> Summit</p>
+                  <p><b>Bono de descuento:</b> $980.000</p>
+                  <p><b>Promociones:</b> de regalo un porta Ski (compras hasta el 15/12/2012)</p>
+                </td>
+                <td class="starred-cell">
+                  <span class="price">$ 11.000.000</span>
+                  <b>Bono:</b>
+                  <span>980.000</span>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="offer-car" value="" id=""></td>
+                <td><img src="images/brands/salazar.jpg" alt=""></td>
+                <td>
+                  <p><b>Nombre comercial:</b> Salazar Israel</p>
+                  <p><b>Bono de descuento:</b> $1.200.000</p>
+                  <p><b>Promociones:</b> No disponible en esta oferta.</p>
+                </td>
+                <td class="starred-cell">
+                  <span class="price">$ 10.780.000</span>
+                  <b>Bono:</b>
+                  <span>1.200.000</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="span12">
+          <h4 class="pill-title">2. Financiamiento</h4>
+          <table class="table table-stripped">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Empresa</th>
+                <th>C.A.E.</th>
+                <th>Seguro Cesantía</th>
+                <th>Requisitos</th>
+                <th>Atributos</th>
+                <th>Interés Mensual</th>
+                <th class="starred-cell">Valor Cuota</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="radio" name="offer-funding" value="" id=""></td>
+                <td><img src="images/brands/bci-seguros.png" alt=""></td>
+                <td><span>30,23%</span></td>
+                <td><i class="icon icon-ok"></i></td>
+                <td>Renta líquida de al menos $250.000</td>
+                <td>Renta líquida de al menos $250.000</td>
+                <td><span>1,95%</span></td>
+                <td class="starred-cell">
+                  <b>48 cuotas de:</b>
+                  <span class="price">$255.515</span>
+                  <span>Valor cuota incluye</span>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="offer-funding" value="" id=""></td>
+                <td><img src="images/brands/tanner.png" alt=""></td>
+                <td><span>27,76%</span></td>
+                <td><i class="icon icon-remove"></i></td>
+                <td>Renta líquida de al menos $1.250.000</td>
+                <td>Renta líquida de al menos $1.250.000</td>
+                <td><span>2,00%</span></td>
+                <td class="starred-cell">
+                  <b>36 cuotas de:</b>
+                  <span class="price">$312.21</span>
+                  <span>Valor cuota incluye</span>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="offer-funding" value="" id=""></td>
+                <td><img src="images/brands/crediautos.png" alt=""></td>
+                <td><span>27,48%</span></td>
+                <td><i class="icon icon-ok"></i></td>
+                <td>Renta líquida de al menos $450.000</td>
+                <td>Renta líquida de al menos $450.000</td>
+                <td><span>1,64%</span></td>
+                <td class="starred-cell">
+                  <b>24 cuotas de:</b>
+                  <span class="price">$401.80</span>
+                  <span>Valor cuota incluye</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="span12">
+          <h4 class="pill-title">3. Seguro</h4>
+          <table class="table table-stripped">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Compañía</th>
+                <th>Producto</th>
+                <th>Deducible</th>
+                <th>Auto de reemplazo</th>
+                <th>Cobertura adicional</th>
+                <th class="starred-cell">Valor cuota</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="radio" name="offer-insurance" value="" id=""></td>
+                <td><img src="images/brands/chilena.png" alt=""></td>
+                <td><span>Auto full</span></td>
+                <td>UF 10</td>
+                <td>12 días con copago de 4.000 al día</td>
+                <td>Taller oficial de Ford</td>
+                <td class="starred-cell">
+                  <b>12 cuotas de:</b>
+                  <span class="price">$27.51</span>
+                  <span>Precio anual 14,75 UF</span>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="offer-insurance" value="" id=""></td>
+                <td><img src="images/brands/rsa.png" alt=""></td>
+                <td><span>Auto VIP</span></td>
+                <td>UF 10</td>
+                <td>20 días con copago de 2.000 al día</td>
+                <td>No disponible</td>
+                <td class="starred-cell">
+                  <b>12 cuotas de:</b>
+                  <span class="price">$31.55</span>
+                  <span>Precio anual 13,15 UF</span>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="offer-insurance" value="" id=""></td>
+                <td><img src="images/brands/bci.png" alt=""></td>
+                <td><span>Auto seguro</span></td>
+                <td>UF 10</td>
+                <td>30 días con copago de 2.500 al día</td>
+                <td>Taller oficial de Ford</td>
+                <td class="starred-cell">
+                  <b>12 cuotas de:</b>
+                  <span class="price">$26.4</span>
+                  <span>Precio anual 13,00 UF</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="form-actions span12 clearfix">
+          <p>
+            <span class="checkbox">
+              <label class="checkbox"><input type="checkbox"> Acepto haber leído y aprobado los <a href="#">Términos y condiciones</a></label>
+            </span>
+            <a href="offer-reg-conf-consolidated.html" class="btn btn-danger pull-right">Continuar</a>
+          </p>
         </section>
      </div>
     </section>
