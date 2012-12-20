@@ -71,4 +71,4 @@ $(function(){
     $('#login-info').slideToggle('slow');
   });
   $([especificaciones_tecnicas,seguridad,equipamiento]).data('status',0);
-})
+});

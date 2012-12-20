@@ -367,7 +367,7 @@
           </ul>
         </div>
       </div>
-      <div id="experto" style="display:block;position:absolute;width:100%;height:100%;background-color:#eee;top:0;left:0;overflow-y:auto;overflow-x:hidden">
+      <div id="experto" style="display:none;position:absolute;width:100%;height:100%;background-color:#eee;top:0;left:0;overflow-y:auto;overflow-x:hidden">
         <div style="padding:20px;">
           <img src="images/expertos/cristobal/cristobal.png" alt="" align="left" width="200" style="margin-right:40px;border:1px solid #b7b7b7 !important;">
           <h5>Cristóbal Vidaurre Vicuña</h5>
@@ -398,13 +398,13 @@
           Ford Focus Sedán 2.0 SE Sport Automático: $10.190.000<br>
           Ford Focus Hatchback 2.0 SE Mecánico: $9.990.000<br>
           <b>Ford Focus Hatchback 2.0 SEL Automático: $11.490.000 (Testeada)</b></p>
-          
+
         </div>
       </div>
     </div>
     <div class="modal-footer">
       <div class="related pull-left">
-        <a href="#" class="btn">Entérate qué opinan los expertos</a>
+        <a href="#" class="btn closed" onclick="$(this).toggleClass('closed');$('#experto').toggle();">Entérate qué opinan los expertos</a>
       </div>
       <a href="#" class="btn" data-dismiss="modal">Cerrar</a>
       <a href="offer.html" class="btn btn-danger w-arrow">COTIZAR <i class="icon-play"></i></a>
