@@ -76,4 +76,7 @@ $(function(){
             v1: [especificaciones_tecnicas_v1,seguridad_v1,equipamiento_v1]
           }
           for(ver in accor) for(var i=0,element;element = accor[ver][i];i++)$(element).data('status',0);
+          $('#modala').on('click',function(e){
+            $('#car-modal-a').modal('toggle');
+          })
 });
