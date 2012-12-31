@@ -361,7 +361,7 @@
               <a class="dropdown-toggle" id="versions" role="button" data-toggle="dropdown" href="#">Ver otras versiones <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="versions">
                 <li><a href="#">Focus HB</a></li>
-                <li><a href="#car-modal-a" data-toggle="modal">Focus Sedan Titanium</a></li>
+                <li><a id="modala" href="#" data-toggle="modal">Focus Sedan Titanium</a></li>
               </ul>
             </li>
           </ul>
@@ -421,7 +421,7 @@
       <div class="green-label">
         <img src="images/co2-label.png" alt="">
       </div>
-      <div id="modalCarousel" class="carousel slide">
+      <div id="modalCarousel1" class="carousel slide">
         <!-- Carousel items -->
         <div class="carousel-inner">
           <div rel=0 class="item active"><img src="images/autos/ford_focus_titanium_t3.jpg" alt=""></div>
@@ -429,9 +429,9 @@
           <div rel=2 class="item"><img src="images/autos/ford_focus_titanium_2_t3.jpg" alt=""></div>
         </div>
         <div class="carousel-paginator">
-          <span onclick="set_active_item(this,$('#modalCarousel')[0]);" rel=0 class="active pag-item"><img src="images/autos/ford_focus_titanium_t.jpg" alt=""></span>
-          <span onclick="set_active_item(this,$('#modalCarousel')[0]);" rel=1 class="pag-item"><img src="images/autos/ford_focus_titanium_1_t.jpg" alt=""></span>
-          <span onclick="set_active_item(this,$('#modalCarousel')[0]);" rel=2 class="pag-item"><img src="images/autos/ford_focus_titanium_2_t.jpg" alt=""></span>
+          <span onclick="set_active_item(this,$('#modalCarousel1')[0]);" rel=0 class="active pag-item"><img src="images/autos/ford_focus_titanium_t.jpg" alt=""></span>
+          <span onclick="set_active_item(this,$('#modalCarousel1')[0]);" rel=1 class="pag-item"><img src="images/autos/ford_focus_titanium_1_t.jpg" alt=""></span>
+          <span onclick="set_active_item(this,$('#modalCarousel1')[0]);" rel=2 class="pag-item"><img src="images/autos/ford_focus_titanium_2_t.jpg" alt=""></span>
         </div>
       </div>
       <!-- <div id="slide-btn" class="slide-btn"></div> -->
@@ -529,13 +529,7 @@
         </div>
         <div class="pull-right span2">
           <ul class="nav nav-pills">
-            <li class="nav-item dropdown dropup">
-              <a class="dropdown-toggle" id="versions" role="button" data-toggle="dropdown" href="#">Ver otras versiones <b class="caret"></b></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="versions">
-                <li><a href="#">Focus HB</a></li>
-                <li><a href="#car-modal" data-toggle="modal">Focus Hatchback SEL</a></li>
-              </ul>
-            </li>
+            <li class="nav-item dropdown dropup"> <a  href="#" onclick="$('#car-modal-a').modal('toggle')">Volver</a> </li>
           </ul>
         </div>
       </div>
