@@ -24,9 +24,12 @@
       <span class="currency nav"><a href="#" class="nav-item active">UF</a><a href="#" class="nav-item">USD</a></span>
       <a href="#login-modal" data-toggle="modal" class="btn">INGRESAR</a>
       <a href="register.html" class="btn btn-danger w-arrow">REGISTRARSE <i class="icon-play"></i></a>
-      <div class="socialmedia">
-        <a href="#" class="sm-facebook"></a>
-        <a href="#" class="sm-twitter"></a>
+      <div style="float:right; clear:right">
+        <div class="socialmedia">
+          <a href="#" class="sm-facebook"></a>
+          <a href="#" class="sm-twitter"></a>
+        </div>
+        <img src="images/co2-header.png" alt="" style="float:right; margin-top: 19px; margin-right: 10px;">
       </div>
     </nav>
   </header>
@@ -89,6 +92,7 @@
           <div class="loadIndicator"><div class="indicator"></div></div>
           <div class="flow">
             <!-- loopeame lo resoult :D -->
+            <img src="images/autos/ford_focus_hb_t2.jpg" alt="" class="item" href="#car-modal" data-toggle="modal">
             <img src="images/autos/cruze_t2.png" alt="" class="item" href="#car-modal" data-toggle="modal">
             <img src="images/autos/honda_civic_t2.jpg" alt="" class="item" href="#car-modal" data-toggle="modal">
             <img src="images/autos/hundaiI30_t2.png" alt="" class="item" href="#car-modal" data-toggle="modal">
@@ -296,13 +300,13 @@
               <a class="dropdown-toggle" id="versions" role="button" data-toggle="dropdown" href="#">Ver otras versiones <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="versions">
                 <li><a href="#">Focus HB</a></li>
-                <li><a href="#car-modal-a" data-toggle="modal">Focus Sedan Titanium</a></li>
+                <li><a id="modala" href="#" data-toggle="modal">Focus Sedan Titanium</a></li>
               </ul>
             </li>
           </ul>
         </div>
       </div>
-      <div id="experto" style="display:none;position:absolute;width:100%;height:100%;background-color:#eee;top:0;left:0;overflow-y:auto;overflow-x:hidden">
+      <div id="experto" style="display:none;position:absolute;width:100%;height:100%;background-color:#eee;top:0;left:0;overflow-y:auto;overflow-x:hidden;z-index:1;">
         <div style="padding:20px;">
           <img src="images/expertos/cristobal/cristobal.png" alt="" align="left" width="200" style="margin-right:40px;border:1px solid #b7b7b7 !important;">
           <h5>Cristóbal Vidaurre Vicuña</h5>
@@ -356,7 +360,7 @@
       <div class="green-label">
         <img src="images/co2-label.png" alt="">
       </div>
-      <div id="modalCarousel" class="carousel slide">
+      <div id="modalCarousel1" class="carousel slide">
         <!-- Carousel items -->
         <div class="carousel-inner">
           <div rel=0 class="item active"><img src="images/autos/ford_focus_titanium_t3.jpg" alt=""></div>
@@ -364,9 +368,9 @@
           <div rel=2 class="item"><img src="images/autos/ford_focus_titanium_2_t3.jpg" alt=""></div>
         </div>
         <div class="carousel-paginator">
-          <span onclick="set_active_item(this,$('#modalCarousel')[0]);" rel=0 class="active pag-item"><img src="images/autos/ford_focus_titanium_t.jpg" alt=""></span>
-          <span onclick="set_active_item(this,$('#modalCarousel')[0]);" rel=1 class="pag-item"><img src="images/autos/ford_focus_titanium_1_t.jpg" alt=""></span>
-          <span onclick="set_active_item(this,$('#modalCarousel')[0]);" rel=2 class="pag-item"><img src="images/autos/ford_focus_titanium_2_t.jpg" alt=""></span>
+          <span onclick="set_active_item(this,$('#modalCarousel1')[0]);" rel=0 class="active pag-item"><img src="images/autos/ford_focus_titanium_t.jpg" alt=""></span>
+          <span onclick="set_active_item(this,$('#modalCarousel1')[0]);" rel=1 class="pag-item"><img src="images/autos/ford_focus_titanium_1_t.jpg" alt=""></span>
+          <span onclick="set_active_item(this,$('#modalCarousel1')[0]);" rel=2 class="pag-item"><img src="images/autos/ford_focus_titanium_2_t.jpg" alt=""></span>
         </div>
       </div>
       <!-- <div id="slide-btn" class="slide-btn"></div> -->
@@ -464,13 +468,7 @@
         </div>
         <div class="pull-right span2">
           <ul class="nav nav-pills">
-            <li class="nav-item dropdown dropup">
-              <a class="dropdown-toggle" id="versions" role="button" data-toggle="dropdown" href="#">Ver otras versiones <b class="caret"></b></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="versions">
-                <li><a href="#">Focus HB</a></li>
-                <li><a href="#car-modal" data-toggle="modal">Focus Hatchback SEL</a></li>
-              </ul>
-            </li>
+            <li class="nav-item dropdown dropup"> <a  href="#" onclick="$('#car-modal-a').modal('toggle')">Volver</a> </li>
           </ul>
         </div>
       </div>
