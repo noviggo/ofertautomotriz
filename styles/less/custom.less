@@ -194,26 +194,28 @@ display:none;
   position: absolute;
   top: 0;
   width: 57px;
-  height: 122px;
+  height: 126px;
   margin-top: 0px;
   background: transparent url("@{url-img}slider-arrows.png") left top no-repeat;
   border: 0px solid white;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
-  }
-  .left{
+  &.left{
     left: -58px;
     background-position: left bottom;
   }
-  .right{
+  &.right{
     right: -58px;
     background-position: right bottom;
   }
+  }
+  
   .item{
-    padding: 0 100px;
-    height: 116px;
+    padding: 1px 100px 0;
+    height: 125px;
     width: 673px;
+/*    display:block;*/
     #gradient > .vertical(@white, @grayLighter);
     h4{
       color:#707070;
@@ -228,8 +230,11 @@ display:none;
       margin-top: 0px;
     }
     img{
-      margin-top: -10px;
+      /*margin-top: -10px;*/
       margin-right:20px;
+    }
+    &.active{
+      z-index:0;
     }
   }
 }
